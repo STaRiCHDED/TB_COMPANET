@@ -13,11 +13,14 @@ public class Operation
     
     public string Description { set; get; }
     
-    public Operation(string companyId, string email, long bill, string description)
+    public DateTime Date { set; get; }
+    
+    public Operation(string companyId, string email, long bill, string description,DateTime date)
     {
         CompanyId = companyId;
         Email = email;
         Bill = bill;
         Description = description;
+        Date = date;
     }
 }
